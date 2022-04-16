@@ -24,7 +24,7 @@
     padding: 40px 100px;
     z-index: 1000;
     display:flex;
-    color: white;
+    color: black;
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -41,26 +41,26 @@
 .text{
     position: relative;
     z-index: 10;
-    color: white;
+    color: black;
 }
 .text h2{
     font-size:4em;
     font-weight:700;
     line-height: 1em;
     text-transform:uppercase;
-    color: white;
+    color: black;
 }
 .text h3{
     font-size:3em;
     font-weight:600;
     line-height: 1em;
     text-transform:uppercase;
-    color: white;
+    color: black;
 }
 .text a {
     display: inline-block;
     font-size:1em;
-    background: white;
+    border: 1px solid black;
     padding: 10px 30px;
     text-decoration: none;
     color:black;
@@ -72,4 +72,5 @@
 .text a:hover {
     color:greenyellow;
     transition: 0.2s;
+    border: 1px solid greenyellow;
 }
