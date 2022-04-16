@@ -49,6 +49,8 @@
     line-height: 1em;
     text-transform:uppercase;
     color: black;
+    align-items: center;
+    justify-content: center;
 }
 .text h3{
     font-size:3em;
@@ -56,6 +58,8 @@
     line-height: 1em;
     text-transform:uppercase;
     color: black;
+    align-items: center;
+    justify-content: center;
 }
 .text a {
     display: inline-block;
@@ -68,6 +72,8 @@
     text-transform:uppercase;
     letter-spacing: 2px;
     transition:0.2s;
+    align-items: center;
+    justify-content: center;
 }
 .text a:hover {
     color:greenyellow;
