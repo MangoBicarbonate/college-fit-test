@@ -43,3 +43,33 @@
     z-index: 10;
     color: white;
 }
+.text h2{
+    font-size:4em;
+    font-weight:700;
+    line-height: 1em;
+    text-transform:uppercase;
+    color: white;
+}
+.text h3{
+    font-size:3em;
+    font-weight:600;
+    line-height: 1em;
+    text-transform:uppercase;
+    color: white;
+}
+.text a {
+    display: inline-block;
+    font-size:1em;
+    background: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    color:black;
+    margin-top:10px;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    transition:0.2s;
+}
+.text a:hover {
+    color:greenyellow;
+    transition: 0.2s;
+}
