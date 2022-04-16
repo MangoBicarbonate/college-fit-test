@@ -40,7 +40,6 @@
 .text{
     display:flex;
     align-items: center;
-    justify-content: center;
     z-index: 10;
     color: black;
 }
@@ -51,7 +50,7 @@
     text-transform:uppercase;
     color: black;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .text h3{
     font-size:3em;
@@ -60,7 +59,7 @@
     text-transform:uppercase;
     color: black;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .text a {
     display: inline-block;
@@ -74,7 +73,7 @@
     letter-spacing: 2px;
     transition:0.2s;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .text a:hover {
     color:greenyellow;
