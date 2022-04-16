@@ -38,42 +38,34 @@
     opacity:0.8;
 }
 .text{
-    display:flex;
-    align-items: center;
     z-index: 10;
-    color: black;
+    color: darkblue;
 }
 .text h2{
     font-size:4em;
     font-weight:700;
     line-height: 1em;
     text-transform:uppercase;
-    color: black;
-    align-items: center;
-    justify-content: space-evenly;
+    color: darkblue;
 }
 .text h3{
     font-size:3em;
     font-weight:600;
     line-height: 1em;
     text-transform:uppercase;
-    color: black;
-    align-items: center;
-    justify-content: space-evenly;
+    color: darkblue;
 }
 .text a {
     display: inline-block;
     font-size:1em;
-    border: 1px solid black;
+    border: 1px solid darkblue;
     padding: 20px 30px;
     text-decoration: none;
-    color:black;
+    color:darkblue;
     margin-top:10px;
     text-transform:uppercase;
     letter-spacing: 2px;
     transition:0.2s;
-    align-items: center;
-    justify-content: space-evenly;
 }
 .text a:hover {
     color:greenyellow;
@@ -84,6 +76,7 @@
 /*
 school
 */
+
 .school header{
     margin-top:10px;
     font-size: 20px;
@@ -95,10 +88,10 @@ school
 .sctext a {
     display: inline-block;
     font-size:1em;
-    border: 1px solid black;
+    border: 1px solid darkblue;
     padding: 20px 30px;
     text-decoration: none;
-    color:black;
+    color:darkblue;
     margin-top:10px;
     text-transform:uppercase;
     letter-spacing: 2px;
