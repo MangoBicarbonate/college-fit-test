@@ -29,13 +29,6 @@
     align-items: center;
     justify-content: space-between;
 }
-.toggle{
-    cursor: pointer;
-    transition:transform .3s ease-in-out;
-}
-.toggle:hover{
-    transform: rotate(90deg);
-}
 .home video{
     position:absolute;
     top: 0;
