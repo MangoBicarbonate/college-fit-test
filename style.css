@@ -38,3 +38,8 @@
     object-fit:cover;
     opacity:0.8;
 }
+.text{
+    position: relative;
+    z-index: 10;
+    color: white;
+}
