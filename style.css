@@ -9,8 +9,9 @@
     right: 0;
     width: 100%;
     min-height: 100vh;
+    position: absolute;
     padding: 100px;
-    display: fit;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     z-index:2;
