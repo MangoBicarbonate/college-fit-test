@@ -84,11 +84,28 @@
 /*
 school
 */
-
 .school header{
+    margin-top:10px;
     font-size: 20px;
     font-weight: 200;
     text-transform: uppercase;
     text-align: center;
     margin: 0px 0px 20px 0px;
+}
+.sctext a {
+    display: inline-block;
+    font-size:1em;
+    border: 1px solid black;
+    padding: 20px 30px;
+    text-decoration: none;
+    color:black;
+    margin-top:10px;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    transition:0.2s;
+}
+.sctext a:hover {
+    color:greenyellow;
+    transition: 0.2s;
+    border: 1px solid greenyellow;
 }
