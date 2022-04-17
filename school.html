@@ -4,38 +4,40 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>School Courses | college major path</title>
-        <script type="text/javascript" src="processing.js"></script>
+        <title>Favorite School Courses</title>
     </head>
     <body class="page1">
         <div class="container">
-            <div class="title">School Courses</div>
-            <form onsubmit="takevalue()">
+            <div class="title">Favorite School Courses</div>
+            <form action="computing.py" methods="post">
                 <div class="user-details">
                     <div class="input-box">
                         <span class="details">Course One</span>
-                        <input type="text" id = "c91" placeholder="Enter a Course" required>
+                        <input type="text" name = "c91" placeholder="Enter a Course" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Course Two</span>
-                        <input type="text" id = "c92" placeholder="Enter a Course" required>
+                        <input type="text" name = "c92" placeholder="Enter a Course" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Course Three</span>
-                        <input type="text" id = "c93" placeholder="Enter a Course" required>
+                        <input type="text" name = "c93" placeholder="Enter a Course" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Course Four</span>
-                        <input type="text" id = "c94" placeholder="Enter a Course" required>
+                        <input type="text" name = "c94" placeholder="Enter a Course" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Course Five</span>
-                        <input type="text" id = "c95" placeholder="Enter a Course" required>
+                        <input type="text" name = "c95" placeholder="Enter a Course" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Course Six</span>
+                        <input type="text" name = "c96" placeholder="Enter a Course" required>
                     </div>
                 </div>
                 <div class="button">
                     <input type="submit" onclick="location.href='intrest.html';" value="Submit"> 
-                </div>
                 </div>
             </form>
         </div>
