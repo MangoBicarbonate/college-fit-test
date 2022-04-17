@@ -2,173 +2,77 @@
 <html lang = "en">
   <head>
     <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- google fonts and stylesheet-->
+    <link rel="stylesheet" href="style1.css">
     <title>Results</title>
-    <style>
-        @import 
-        url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        body{
-            background: #e7e7e7;
-            font-family: "Muli",sans-serif;
-        }
-        .course {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0px 10px 10px
-            rgba(0,0,0,.2);
-            display: flex;
-            max-width: 100%;
-            overflow: hidden;
-            width: 100px;
-            position: absolute;
-            top: 25%;
-            left: 25%;
-            transform: translate(-25%,-25%);  /* he did 50 */
-        }
-
-        .course h6 {
-            opacity: .6;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-        .course h2 {
-            letter-spacing: 1px;
-            margin: 10px 0;
-        }
-        .preview{
-            background: #e40046;
-            color: white;
-            padding: 30px;
-            width: 250px;
-            position: relative;
-        }
-        .preview a{
-            color: white;
-            font-size: 12px;
-            opacity: .6;
-            margin-top: .6;
-            text-decoration: none;
-        }
-
-        .info {
-            padding: 30px;
-            position:relative;
-            width: 100%;
-        }
-        .progress-wrapper {
-            position: absolute;
-            top: 30px;
-            right: 30px;
-            text-align: right;
-            width: 150px;
-        }
-        .progress {
-            background: #ddd;
-            border-radius: 3px;
-            height: 5px;
-            width: 100%;
-        }
-        .progress::after {
-            content: "";
-            border-radius: 3px;
-            background: #e40046;
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 5px;
-            width: 36%;
-        }
-        .progress-text {
-            font-size: 10px;
-            opacity: .6;
-            letter-spacing: 1px;
-        }
-        .info p {
-            font-size: 12px;
-            font-weight: bold;
-        }
-        .btn {
-            background: #e40046;
-            border: 1px solid transparent;
-            box-shadow: 0px 5px 10px
-            rgba(0,0,0,.2);
-            color: white;
-            font-size: 16px;
-            padding: 10px 20px;
-            position: absolute;
-            bottom: 15px;
-            right: 30px;
-            letter-spacing: 1px;
-            cursor: pointer;
-            transition: all .4 ease-in-out;
-            font-weight: bold;
-            border-radius: 20px;
-        }
-        .btn::hover {
-            background: white;
-            color: #e40046;
-        }
-        @media(max-width: 768px){
-            .course {
-                flex-direction: column;
-                width: 90%;
-            }
-            .preview {
-                width: 100%;
-            }
-            .preview h2{
-                margin: 10px 0 0;
-            }
-            .preview a {
-                margin-top: 10px;
-            }
-            .info h2 {
-                margin-top: 20px;
-            }
-            .info p{
-                margin-bottom: 50px;
-            }
-            .btn{
-                padding: 10px 15px;
-                    float: right;
-                font-size: 14px;
-            }
-        }
-    </style>
   </head>
   <body>
-      <div class="container">
-          <div class="course">
-            </div class="preview">
-                <h6>Course</h6>
-                <h2 id="hm1"></h2>
-                <a href="#"> View All Chapters</a>
-            </div>
-            <div class="info">
-                <div class="progress-wrapper">
-                    <div class="progress">  
-                    </div>
-                    <span class="progress-text">4/9 Challenges</span>
-                </div>
-                <h6>Chapter 4</h6>
-                <h2>JAVASCRIPT,HTML & CSS</h2>
-                 <p class="p-trunc" id="hm1d"></p>
-                 <button class="btn">Next Channel</button>
-            </div>
-          </div>
-      </div>
-
-      <script>
-          const trunc = 
-          document.querySelector(".p-trunc");
-          trunc.innerText = 
-          trunc.innerText.substring(0, 100)
-          "...";
-      </script>
-      <script src="scripts/actual.js"></script>
+    <section class= "showcase">
+      <header>
+        <h1 class="logo">Results</h1>
+        <div class="toggle"></div>
+      </header>
+      <video src="soar.mp4" muted loop autoplay></video>
+      <div class="text">
+        <h6> Congratulations! </h6>
+        <h7> Here are some high fit majors for you</h7>
+      	<p></p>
+        <a href="index.html">Home</a>      
+    </section>
+  <section class="content">
+    <h4 id="hm1"></h4>
+    <hr>
+    <p id="hm1d"></p>
+  </section>
+  <section class="content">
+    <h4 id="hm2"></h4>
+    <hr>
+    <p id="hm2d"></p>
+  </section>
+  <section class="content">
+    <h4 id="hm3"></h4>
+    <hr>
+    <p id="hm3d"></p>
+  </section>
+<section class="impact">
+    <h5> Lesser of a Fit Majors</h5>
+</section>
+<section class="content">
+    <h4 id="m1"></h4>
+    <hr>
+    <p id="m1d"></p>
+</section>
+<section class="content">
+    <h4 id="m2"></h4>
+    <hr>
+    <p id="m2d"></p>
+</section>
+<section class="content">
+    <h4 id="m3"></h4>
+    <hr>
+    <p id="m3d"></p>
+</section>
+<section class="content">
+    <h4 id="m4"></h4>
+    <hr>
+    <p id="m4d"></p>
+</section>
+<section class="content">
+    <h4 id="m5"></h4>
+    <hr>
+    <p id="m5d"></p>
+</section>
+<section class="content">
+    <h4 id="m6"></h4>
+    <hr>
+    <p id="m6d"></p>
+</section>
+   <section class= "devletter">
+    <h2>
+    	<q> I sincerely hope you discover a major that is for you</q>
+    </h2>
+  <h3>- With care, The Dev</h3>
+  </section>
   </body>
 </html>
