@@ -2,38 +2,173 @@
 <html lang = "en">
   <head>
     <meta charset = "utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <!-- google fonts and stylesheet-->
-    <link rel="stylesheet" href="style.css">
     <title>Results</title>
+    <style>
+        @import 
+        url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #e7e7e7;
+            font-family: "Muli",sans-serif;
+        }
+        .course {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 10px 10px
+            rgba(0,0,0,.2);
+            display: flex;
+            max-width: 100%;
+            overflow: hidden;
+            width: 100px;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            transform: translate(-25%,-25%);  /* he did 50 */
+        }
+
+        .course h6 {
+            opacity: .6;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .course h2 {
+            letter-spacing: 1px;
+            margin: 10px 0;
+        }
+        .preview{
+            background: #e40046;
+            color: white;
+            padding: 30px;
+            width: 250px;
+            position: relative;
+        }
+        .preview a{
+            color: white;
+            font-size: 12px;
+            opacity: .6;
+            margin-top: .6;
+            text-decoration: none;
+        }
+
+        .info {
+            padding: 30px;
+            position:relative;
+            width: 100%;
+        }
+        .progress-wrapper {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            text-align: right;
+            width: 150px;
+        }
+        .progress {
+            background: #ddd;
+            border-radius: 3px;
+            height: 5px;
+            width: 100%;
+        }
+        .progress::after {
+            content: "";
+            border-radius: 3px;
+            background: #e40046;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 5px;
+            width: 36%;
+        }
+        .progress-text {
+            font-size: 10px;
+            opacity: .6;
+            letter-spacing: 1px;
+        }
+        .info p {
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .btn {
+            background: #e40046;
+            border: 1px solid transparent;
+            box-shadow: 0px 5px 10px
+            rgba(0,0,0,.2);
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            position: absolute;
+            bottom: 15px;
+            right: 30px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all .4 ease-in-out;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+        .btn::hover {
+            background: white;
+            color: #e40046;
+        }
+        @media(max-width: 768px){
+            .course {
+                flex-direction: column;
+                width: 90%;
+            }
+            .preview {
+                width: 100%;
+            }
+            .preview h2{
+                margin: 10px 0 0;
+            }
+            .preview a {
+                margin-top: 10px;
+            }
+            .info h2 {
+                margin-top: 20px;
+            }
+            .info p{
+                margin-bottom: 50px;
+            }
+            .btn{
+                padding: 10px 15px;
+                    float: right;
+                font-size: 14px;
+            }
+        }
+    </style>
   </head>
   <body>
-    <section class= "showcase">
-      <header>
-        <h4 class="logo">Tonga Web</h4>
-        <div class="toggle"></div>
-      </header>
-      <video src="soar.mp4" muted loop autoplay></video>
-      <div class="text">
-        <h5> The Underwater Volcanic Eruption </h5>
-        <h6> That Caused Widespread Destruction</h6>
-      	<p></p>
-        <a href="https://www.unicef.org.au/appeals/tonga-recovery-appeal#:~:text=Please%20be%20there%20for%20children,Tonga%20recover%20from%20this%20crisis.&text=Ninety%20cents%20of%20every%20%241,work%20for%20children%20in%20Tonga.">Make a Donation to UNICEF</a>      
-    </section>
-  <section class="content">
-    <h4>The Tonga Tsunami Disaster</h4>
-    <hr>
-    <p id = contenthere>
-      After staying relatively inactive since 2014, the Hunga Tonga–Hunga Haʻapai volcano erupted on 20 December 2021, sending 
-      ash and towering tsunami waves toward the small South Pacific Tonga's Fonuafo'ou island. Satellites visually captured
-      shockwaves propagating across the Pacific Ocean. The event, now considered the world's largest underwater volcanic eruption 
-      in three decades, severed the single cable that connects Tonga to the outside world, effectively removing all internet and 
-      phone communication for the nation's 105,000 people. As a result, information on the true extent of the damage and how the 
-      world could best help was significantly delayed. The event was probably the largest volcanic eruption in the 21st 
-      century, and the largest recorded since the 1991 eruption of Mount Pinatubo. The Global Facility for Disaster Reduction and 
-      Recovery reported that 600 buildings including 300 homes were damaged or destroyed by the tsunami. The damage was estimated 
-      at US $43.7 million.
-    </p>
-  </section>
+      <div class="container">
+          <div class="course">
+            </div class="preview">
+                <h6>Course</h6>
+                <h2 id="hm1"></h2>
+                <a href="#"> View All Chapters</a>
+            </div>
+            <div class="info">
+                <div class="progress-wrapper">
+                    <div class="progress">  
+                    </div>
+                    <span class="progress-text">4/9 Challenges</span>
+                </div>
+                <h6>Chapter 4</h6>
+                <h2>JAVASCRIPT,HTML & CSS</h2>
+                 <p class="p-trunc" id="hm1d"></p>
+                 <button class="btn">Next Channel</button>
+            </div>
+          </div>
+      </div>
+
+      <script>
+          const trunc = 
+          document.querySelector(".p-trunc");
+          trunc.innerText = 
+          trunc.innerText.substring(0, 100)
+          "...";
+      </script>
+      <script src="scripts/actual.js"></script>
   </body>
 </html>
