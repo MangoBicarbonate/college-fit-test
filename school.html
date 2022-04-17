@@ -5,17 +5,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title>School Courses | college major path</title>
-        <script>
-            function takevalue()
-            {
-                var course91=document.getElementById("c91").value;
-                var course92=document.getElementById("c92").value;
-                var course93=document.getElementById("c93").value;
-                var course93=document.getElementById("c94").value;
-                var course93=document.getElementById("c95").value;
-                document.write(course91 + course92 + course93);
-            }
-        </script>
+        <script type="text/javascript" src="processing.js"></script>
     </head>
     <body class="page1">
         <div class="container">
@@ -63,7 +53,7 @@
                         </label>
                 </div>
                 <div class="button">
-                    <input type="submit" value="Next">
+                    <input type="submit" onclick="takevalue()">
             </form>
         </div>
     </body>
