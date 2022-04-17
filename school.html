@@ -5,46 +5,60 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title>School Courses | college major path</title>
+        <script>
+            function takevalue()
+            {
+                var course91=document.getElementById("c91").value;
+                var course92=document.getElementById("c92").value;
+                var course93=document.getElementById("c93").value;
+                var course93=document.getElementById("c94").value;
+                var course93=document.getElementById("c95").value;
+                document.write(course91 + course92 + course93);
+            }
+        </script>
     </head>
-    <body>
+    <body class="page1">
         <div class="container">
             <div class="title">School Courses</div>
-            <form action="#">
+            <form onsubmit="takevalue()">
                 <div class="user-details">
                     <div class="input-box">
                         <span class="details">Course One</span>
-                        <input type="text" placeholder="Enter a Course" required>
+                        <input type="text" id = "c91" placeholder="Enter a Course" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Course Two</span>
-                        <input type="text" placeholder="Enter a Course" required>
+                        <input type="text" id = "c92" placeholder="Enter a Course" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Course Three</span>
-                        <input type="text" placeholder="Enter a Course" required>
+                        <input type="text" id = "c93" placeholder="Enter a Course" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Course Four</span>
-                        <input type="text" placeholder="Enter a Course" required>
+                        <input type="text" id = "c94" placeholder="Enter a Course" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Course Five</span>
-                        <input type="text" placeholder="Enter a Course">
+                        <input type="text" id = "c95" placeholder="Enter a Course" required>
                     </div>
                 </div>
                 <div class="gender-details">
+                    <input type="radio" name="gender" id="dot-1">
+                    <input type="radio" name="gender" id="dot-2">
+                    <input type="radio" name="gender" id="dot-3">
                     <span class="gender-title">Grade</span>
                     <div class="category">
-                        <label for="">
+                        <label for="dot-1">
                             <span class="dot one"></span>
                             <span class="gender">Male</span>
                         </label>
-                        <label for="">
-                            <span class="dot one"></span>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
                             <span class="gender">Female</span>
                         </label>
-                        <label for="">
-                            <span class="dot one"></span>
+                        <label for="dot-3">
+                            <span class="dot three"></span>
                             <span class="gender">Other</span>
                         </label>
                 </div>
