@@ -9,37 +9,49 @@
     <body class="page1">
         <div class="container">
             <div class="title">Favorite School Courses</div>
-            <form action="computing.py" methods="post">
+            <form action="greetings()">
                 <div class="user-details">
                     <div class="input-box">
                         <span class="details">Course One</span>
-                        <input type="text" name = "c91" placeholder="Enter a Course" required>
+                        <input type="text" id = "c1" placeholder="Enter a Course" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Course Two</span>
-                        <input type="text" name = "c92" placeholder="Enter a Course" required>
+                        <input type="text" id = "c2" placeholder="Enter a Course" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Course Three</span>
-                        <input type="text" name = "c93" placeholder="Enter a Course" required>
+                        <input type="text" id = "c3" placeholder="Enter a Course" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Course Four</span>
-                        <input type="text" name = "c94" placeholder="Enter a Course" required>
+                        <input type="text" id = "c4" placeholder="Enter a Course" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Course Five</span>
-                        <input type="text" name = "c95" placeholder="Enter a Course" required>
+                        <input type="text" id = "c5" placeholder="Enter a Course" required>
                     </div>
                     <div class="input-box">
                         <span class="details">Course Six</span>
-                        <input type="text" name = "c96" placeholder="Enter a Course" required>
+                        <input type="text" id = "c6" placeholder="Enter a Course" required>
                     </div>
                 </div>
                 <div class="button">
-                    <input type="submit" onclick="location.href='computing.py';" value="Submit"> 
+                    <input type="submit" onclick="location.href='results.html';" value="Submit"> 
                 </div>
             </form>
         </div>
     </body>
+    <script>
+        function greetings(){
+        var course1 = document.getElementById("c1").value;
+        var course2 = document.getElementById("c2").value;
+        var course3 = document.getElementById("c3").value;
+        var course4 = document.getElementById("c4").value;
+        var course5 = document.getElementById("c5").value;
+        var course6 = document.getElementById("c6").value;
+
+        document.write("Hello!!, " + course1 + course2 + course3);
+        }
+    </script>
 </html>
