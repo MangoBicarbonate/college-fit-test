@@ -12,6 +12,7 @@ function greetings(){
     course4 = document.getElementById("c4").value;
     course5 = document.getElementById("c5").value;
     course6 = document.getElementById("c6").value;
+    window.location.href="results.html";
 }
 
 document.getElementById("m1").innerHTML = m1;
