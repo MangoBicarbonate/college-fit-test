@@ -1,4 +1,5 @@
-print ("Content-type: text/html\n\n")
+#!C:\Python27\python.exe
+print "Content-type: text/html\n\n";
 
 import cgi
 
@@ -11,6 +12,6 @@ course4 = form.getvalue("c94")
 course5 = form.getvalue("c95")
 course6 = form.getvalue("c96")
 
-print (course1 + "From Python")
+print course1 + "From Python"
 
 
